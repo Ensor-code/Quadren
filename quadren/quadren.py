@@ -1,13 +1,5 @@
-import matplotlib.pyplot as plt
-import numpy             as np
+import numpy as np
 import numba
-import os
-import re
-
-from scipy.spatial.transform import Rotation
-from ipywidgets              import interact, FloatSlider
-from glob                    import glob
-from tqdm                    import tqdm
 
 
 class Quadren():
@@ -109,7 +101,7 @@ class Quadren():
         """
         Render an image of the data along the 3rd axis.
         """
-        return Renderer.render__(self.xyz_dim, dat)
+        return Quadren.render__(self.xyz_dim, dat)
 
     
     @staticmethod
