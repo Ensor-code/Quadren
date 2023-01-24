@@ -1,2 +1,4 @@
 *.pyc
 */.ipynb_checkpoints/*
+
+*input_file.txt
